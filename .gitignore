@@ -1,0 +1,6 @@
+/node_modules
+/build
+/test.html
+
+# db files are sensitive information.
+*.sqlite3

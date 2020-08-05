@@ -1,0 +1,26 @@
+{
+  "name": "web-scraper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "author": "hsk.coder@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cheerio": "^0.22.18",
+    "@types/node": "^14.0.14",
+    "@types/sleep": "0.0.8",
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "iconv-lite": "^0.6.0",
+    "sleep": "^6.2.0"
+  }
+}
