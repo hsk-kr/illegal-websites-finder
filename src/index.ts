@@ -1,5 +1,7 @@
-import { fetchSource } from "./lib/scraping";
+import { fetchSource } from './lib/scraping';
 
-fetchSource("https://google.com/").then((html: string) => {
-  console.log(html);
-});
+fetchSource({ url: 'https://naver.com/', browserMode: true }).then(
+  (html: string) => {
+    console.log(html);
+  }
+);
