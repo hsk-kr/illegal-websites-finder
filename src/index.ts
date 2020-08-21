@@ -1,7 +1,11 @@
-import { fetchSource } from './lib/scraping';
+import { fetchGoogleSearchLinks } from './lib/google-scraping';
 
-fetchSource({ url: 'https://naver.com/', browserMode: true }).then(
-  (html: string) => {
-    console.log(html);
-  }
-);
+const main = async () => {
+  const links: Array<string> = await fetchGoogleSearchLinks('test', 1);
+
+  console.log(links);
+};
+
+main().then(() => {
+  console.log('done');
+});
